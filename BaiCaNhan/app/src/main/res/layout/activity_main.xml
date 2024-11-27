@@ -25,28 +25,64 @@
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginBottom="16dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="16sp"
 
-    <!-- Buttons for Buy/Sell -->
-    <LinearLayout
+    >
+    <TextView
+        android:id="@+id/sliderLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to buy "
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp">
+
+
+    </TextView>
+    <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:max="1"
+        android:progress="0"
+        android:thumbTint="#4CAF50"
+        android:progressTint="#4CAF50"
+
+        ></SeekBar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I want to buy                      ||                             I want to sell"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
 
-        <Button
-            android:id="@+id/buyButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I want to buy"
-            android:layout_marginEnd="8dp" />
+        ></TextView>
+</LinearLayout>
+    <!-- Buttons for Buy/Sell -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="16dp">-->
 
-        <Button
-            android:id="@+id/sellButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I want to sell" />
-    </LinearLayout>
+<!--        <Button-->
+<!--            android:id="@+id/buyButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="I want to buy"-->
+<!--            android:layout_marginEnd="8dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/sellButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="I want to sell" />-->
+<!--    </LinearLayout>-->
 
     <!-- Remember My Choice -->
     <CheckBox
