@@ -12,6 +12,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        SeekBar slider = findViewById(R.id.slider);
+        TextView sliderLabel = findViewById(R.id.sliderLable);
         Button okButton = findViewById(R.id.okButton);
         CheckBox rememberChoice = findViewById(R.id.rememberChoice);
 
