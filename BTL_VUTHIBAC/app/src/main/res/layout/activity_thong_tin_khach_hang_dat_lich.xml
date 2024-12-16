@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview"
+    android:layout_marginBottom="1dp">
+
+    <LinearLayout
+        android:id="@+id/bo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="#03A8FF"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:background="#F6F3EF"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:id="@+id/back"
+                android:src="@drawable/muiten"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="9"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+
+                android:paddingBottom="30dp"
+                android:text="Thêm Thông Tin Khách Hàng Đặt Lịch Khám"
+                android:textColor="#FFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />  </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="30dp"
+      android:layout_below="@+id/bo"
+        app:cardElevation="20dp"
+        android:background="@drawable/edittext">
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt lịch "
+                android:id="@+id/loginText"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#00B6FF"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/hoten"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/hoten"
+                android:drawablePadding="8dp"
+                android:hint="Họ và Tên"
+                android:textColorHint="#aaa"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="1dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/sdt"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:hint="SĐT"
+                android:padding="8dp"
+                android:textColorHint="#aaa"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/diachi"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/diachi"
+                android:drawablePadding="8dp"
+                android:hint="Địa chỉ"
+                android:padding="8dp"
+                android:textColorHint="#aaa"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/giokham"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="8dp"
+                android:hint="Giờ muốn khám"
+                android:padding="8dp"
+                android:textColorHint="#aaa"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/ngaykham"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/lich"
+                android:drawablePadding="8dp"
+                android:hint="Ngày Khám"
+                android:padding="8dp"
+                android:textColorHint="#aaa"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/dichvu"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/dichvu"
+                android:drawablePadding="8dp"
+                android:hint="Chọn Dịch Vụ Khám"
+                android:padding="8dp"
+                android:textColorHint="#aaa"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:orientation="horizontal"
+
+
+               android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+
+android:textSize="20dp"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:hint="Tổng tiền:"
+                android:padding="8dp"
+                android:textColorHint="#FF001E"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="1dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp"
+                   android:id="@+id/tongtienthanhtoan"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   android:drawablePadding="8dp"
+                   android:text="0"
+                 android:layout_marginLeft="30dp"
+                   android:padding="8dp"
+                   android:textColor="#FF001E"
+                   android:inputType="text"
+
+
+                   android:layout_marginTop="1dp"/>
+
+           </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/btnDatngay"
+                android:text="Đặt ngay"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#00B6FF"
+                app:cornerRadius="20dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/tendn"
+               />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/mabs"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+     <!-- Toolbar ở cuối màn hình -->
+    <LinearLayout
+        android:id="@+id/bottomToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#F6F3EF"
+        android:padding="1dp">
+
+        <ImageButton
+            android:id="@+id/btntrangchu"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#F6F3EF"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/btntinnhan"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#F6F3EF"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/tinnhan" />
+
+        <ImageButton
+            android:id="@+id/btnlichdat"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#F6F3EF"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/datlich" />
+
+        <ImageButton
+            android:id="@+id/btncanhan"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#F6F3EF"
+            android:layout_weight="1"
+            android:src="@drawable/user" />
+    </LinearLayout>
+
+</RelativeLayout>

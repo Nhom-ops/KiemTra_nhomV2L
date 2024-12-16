@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/listview_trangchu_ngdung"
+    android:layout_marginBottom="1dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp"> <!-- Độ bo góc -->
+
+    <ImageView
+        android:id="@+id/imgbs"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+
+
+        android:src="@mipmap/ic_launcher" /> <!-- Thay your_image bằng ảnh của bạn -->
+</androidx.cardview.widget.CardView>
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+       android:paddingBottom="15dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="70dp"
+       > <!-- Đặt TableLayout bên phải ImageView -->
+
+
+
+        <!-- Các TableRow khác giữ nguyên -->
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/ht1"
+                android:text="Họ tên"
+                android:textColor="#0021F6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+
+
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/cn1"
+                android:text="chuyên ngành"
+                android:textColor="#0021F6"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+
+
+    </TableLayout>
+    <TextView
+        android:id="@+id/mbs1"
+        android:textSize="1sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ns1"
+        android:textSize="1sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/gt1"
+        android:textSize="1sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tdn1"
+        android:textSize="1sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/sdt1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btndatngay"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="Đặt Ngay"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:drawableRight="@drawable/date"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"/> <!-- Khoảng cách bên phải -->
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Đặt Lịch Khám Bệnh"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="31" >
+        <activity
+            android:name=".ThongBaoNguoiDung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LichDatKhamTheoBacSi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangCaNhan_Bacsi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangchuNgdung_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangCaNhan_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TTBacSi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SuaThongTinBacSi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SuaTaiKhoan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LichDatKhamTheoUser_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ThemLichDatKham_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DanhsachLichKhamDaDat_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinKhachHangDatLich_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangCaNhan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ChiTietBacSi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DangKiTaiKhoan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TaiKhoan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ThemTaiKhoan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".TrangchuAdmin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ThemThongTinBacSi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TrangchuBacSi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
